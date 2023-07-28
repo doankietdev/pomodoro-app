@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./assets/css/main.css" />
+      <link rel="stylesheet" href="./assets/css/count-down.css" />
+      <link rel="stylesheet" href="./assets/css/setting-form.css" />
+      <link rel="stylesheet" href="./assets/css/responsive.css" />
+      <link href="./assets/img/favicon-32x32.png" rel="icon" type="image/x-icon" />
+      <title>Pomodoro App</title>
+   </head>
+   <body class="">
+      <div class="countdown">
+         <div class="time-section" id="hours">
+            <div class="time-group">
+               <div class="time-segment">
+                  <div class="segment-display">
+                     <div class="segment-display__top">0</div>
+                     <div class="segment-display__bottom">0</div>
+                     <div class="segment-overlay">
+                        <div class="segment-overlay__top">0</div>
+                        <div class="segment-overlay__bottom">0</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="time-segment">
+                  <div class="segment-display">
+                     <div class="segment-display__top">0</div>
+                     <div class="segment-display__bottom">0</div>
+                     <div class="segment-overlay">
+                        <div class="segment-overlay__top">0</div>
+                        <div class="segment-overlay__bottom">0</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <p class="time-title">Hours</p>
+         </div>
+
+         <div class="time-section" id="minutes">
+            <div class="time-group">
+               <div class="time-segment">
+                  <div class="segment-display">
+                     <div class="segment-display__top">0</div>
+                     <div class="segment-display__bottom">0</div>
+                     <div class="segment-overlay">
+                        <div class="segment-overlay__top">0</div>
+                        <div class="segment-overlay__bottom">0</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="time-segment">
+                  <div class="segment-display">
+                     <div class="segment-display__top">0</div>
+                     <div class="segment-display__bottom">0</div>
+                     <div class="segment-overlay">
+                        <div class="segment-overlay__top">0</div>
+                        <div class="segment-overlay__bottom">0</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <p class="time-title">Minutes</p>
+         </div>
+
+         <div class="time-section" id="seconds">
+            <div class="time-group">
+               <div class="time-segment">
+                  <div class="segment-display">
+                     <div class="segment-display__top">0</div>
+                     <div class="segment-display__bottom">0</div>
+                     <div class="segment-overlay">
+                        <div class="segment-overlay__top">0</div>
+                        <div class="segment-overlay__bottom">0</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="time-segment">
+                  <div class="segment-display">
+                     <div class="segment-display__top">0</div>
+                     <div class="segment-display__bottom">0</div>
+                     <div class="segment-overlay">
+                        <div class="segment-overlay__top">0</div>
+                        <div class="segment-overlay__bottom">0</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <p class="time-title">Seconds</p>
+         </div>
+      </div>
+      <audio src="" autoplay></audio>
+      <div class="setting-form active">
+         <form action="" method="POST" class="form" id="">
+            <h3 class="heading">POMODORO</h3>
+            <p class="desc">Welcome to App</p>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+               <label for="pomodoro-hours" class="form-label">Work time</label>
+               <div class="form-control-wrap">
+                  <input
+                     id="pomodoro-hours"
+                     name="pomodoroHours"
+                     type="number"
+                     class="form-control"
+                     value="0"
+                  />
+                  :
+                  <input
+                     id="pomodoro-minutes"
+                     name="pomodoroMinutes"
+                     type="number"
+                     class="form-control"
+                     value="25"
+                  />
+                  :
+                  <input
+                     id="pomodoro-seconds"
+                     name="pomodoroSeconds"
+                     type="number"
+                     class="form-control"
+                     value="0"
+                  />
+               </div>
+               <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+               <label for="short-break-hours" class="form-label">Short Break</label>
+               <div class="form-control-wrap">
+                  <input
+                     id="short-break-hours"
+                     name="shortBreakHours"
+                     type="number"
+                     class="form-control"
+                     value="0"
+                  />
+                  :
+                  <input
+                     id="short-break-minutes"
+                     name="shortBreakMinutes"
+                     type="number"
+                     class="form-control"
+                     value="5"
+                  />
+                  :
+                  <input
+                     id="short-break-seconds"
+                     name="shortBreakSeconds"
+                     type="number"
+                     class="form-control"
+                     value="0"
+                  />
+               </div>
+               <span class="form-message"></span>
+            </div>
+
+             <div class="form-group">
+               <label for="long-break-hours" class="form-label">Long Break</label>
+               <div class="form-control-wrap">
+                  <input
+                     id="long-break-hours"
+                     name="longBreakHours"
+                     type="number"
+                     class="form-control"
+                     value="0"
+                  />
+                  :
+                  <input
+                     id="long-break-minutes"
+                     name="longBreakMinutes"
+                     type="number"
+                     class="form-control"
+                     value="15"
+                  />
+                  :
+                  <input
+                     id="long-break-seconds"
+                     name="longBreakSeconds"
+                     type="number"
+                     class="form-control"
+                     value="0"
+                  />
+               </div>
+               <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+               <label for="number-pomodoro" class="form-label">Number Of Pomodoros</label>
+               <div class="form-control-wrap">
+                  <input
+                     id="number-pomodoros"
+                     name="numberPomodoros"
+                     type="number"
+                     class="form-control"
+                     value="2"
+                  />
+               </div>
+               <span class="form-message"></span>
+            </div>
+
+            <button class="form-submit">Start</button>
+         </form>
+      </div>
+      <script type="module" src="./assets/js/app.js"></script>
+   </body>
+</html>

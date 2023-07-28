@@ -1,0 +1,34 @@
+:root {
+   --text-color: #BABABA;
+   --text-second-color: #acacac;
+   --segment-top-color: #202020;
+   --segment-bottom-color: #333;  
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: 'Roboto', sans-serif;
+}
+
+body {
+   background-color: #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   overflow: hidden;
+   transition: 2s;
+}
+
+body.short-breaking {
+   background-color: #38858A;
+}
+
+body.long-breaking {
+   background-color: #397097;
+}
