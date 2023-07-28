@@ -1,0 +1,115 @@
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+   .segment-overlay__top {
+      top: 1px;
+   }
+
+   .time-title {
+      font-size: 22px;
+      margin-top: 18px;
+   }
+
+   .form {
+      width: 100%;
+      padding: 32px;
+      margin: 16px;
+   }
+}
+
+/* Tablet */
+@media (min-width: 760px) and (max-width: 1023px) {
+   .time-segment {
+      font-size: 120px;
+      width: 128px;
+   }
+
+   .segment-overlay {
+      width: 128px;
+   }
+}
+
+/* ---- Mobile high resolution --- */
+/* Mobile high resolution horizontal */
+@media (min-width: 590px) and (max-width: 859px) {
+   .time-segment {
+      font-size: 80px;
+      width: 84px;
+   }
+
+   .segment-overlay {
+      width: 84px;
+   }
+
+   .time-title {
+      font-size: 17px;
+      margin-top: 14px;
+   }
+}
+
+/* Mobile high resolution vertical */
+@media (min-width: 340px) and (max-width: 479px) {
+   .countdown {
+      display: block;
+   }
+   
+   .time-segment {
+      font-size: 92px;
+      width: 96px;
+   }
+
+   .time-section + .time-section {
+      margin-top: 32px;
+   }
+
+   .segment-overlay {
+      width: 96px;
+   }
+
+   .time-title {
+      font-size: 20px;
+      margin-top: 14px;
+   }
+}
+
+/* ---- Mobile low resolution --- */
+/* Mobile low resolution horizontal */
+@media (min-width: 549px) and (max-width: 599px) {
+   .time-segment {
+      font-size: 72px;
+      width: 72px;
+   }
+
+   .segment-overlay {
+      width: 72px;
+   }
+
+   .time-title {
+      font-size: 15px;
+      margin-top: 14px;
+   }
+}
+
+/* Mobile low resolution vertical */
+@media (max-width: 339px) {
+   .countdown {
+      display: block;
+   }
+   
+   .time-segment {
+      font-size: 80px;
+      width: 90px;
+   }
+
+   .time-section + .time-section {
+      margin-top: 20px;
+   }
+
+   .segment-overlay {
+      width: 90px;
+   }
+
+   .time-title {
+      font-size: 17px;
+      margin-top: 10px;
+   }
+}
